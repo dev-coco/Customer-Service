@@ -6,13 +6,9 @@
   <meta name="robots" content="noindex, nofollow">
   <title>问题自助解答</title>
   <link rel="stylesheet" href="https://dev-coco.github.io/css/customer-service.css">
-  <script src="https://dev-coco.github.io/js/encryption.js"></script>
+  <base target="_blank">
 </head>
 <body>
-  <div class="frame" style="display:none">
-    <p class="close" onclick="close()">✖</p>
-    <iframe src="https://docs.google.com/forms/d/e/FormID/viewform?embedded=true" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
-  </div>
   <section class="msger">
     <header class="msger-header">
       <div class="msger-header-title">
@@ -38,17 +34,21 @@
         </div>
       </div>
     </main>
+    <div class="loading" style="display: none">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="msger-inputarea">
       <input type="text" id="search" class="msger-input" onkeypress="enterPress(event)" placeholder="请输入内容...">
       <button onclick="submit()" class="msger-send-btn">发送</button>
     </div>
   </section>
-  <script>
-    const sheetID = ''
-    const apiKey = ''
-    const frameKeyword = ''
-  </script>
   <script src="https://dev-coco.github.io/js/auto-complete.min.js"></script>
-  <script src="https://dev-coco.github.io/js/customer-service.js"></script>
+  <script src="customer-service.js"></script>
 </body>
 </html>
